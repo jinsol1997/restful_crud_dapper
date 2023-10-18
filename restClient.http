@@ -1,0 +1,27 @@
+@endpoint = http://localhost:5041/api/Language
+
+### SELECT ALL
+GET {{endpoint}}
+
+### SELECT BY ID
+GET {{endpoint}}/41
+
+### CREATE
+POST {{endpoint}}
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name" : "restClientExtension Test"
+}
+
+### UPDATE
+PUT {{endpoint}}/56
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name" : "update Test"
+}
+
+### DELETE
+DELETE {{endpoint}}/41
+
